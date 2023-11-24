@@ -10,6 +10,9 @@ $password = "choucroute";
 $usernameUtilisateur = "";
 $passwordUtilisateur = "";
 
+$idPoulet = '';
+
+$pageProduit = false;
 // logique de connection   $_POST etc etc
 
 if (isset($_POST['username'])){
@@ -23,6 +26,13 @@ if (isset($_POST['username'])){
       }
     }
   }
+
+}
+
+if (isset($_POST['pouletId'])){
+  $pageProduit = true;
+  $idPoulet = $_POST['pouletId'];
+
 
 }
 
